@@ -1,0 +1,2 @@
+# veritinet
+Сайт VeritiNET
