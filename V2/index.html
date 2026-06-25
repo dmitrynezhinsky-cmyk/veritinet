@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VeritiNET — Ваша собственная коммуникационная среда</title>
+    <meta name="description" content="VeritiNET разворачивает для компании собственную среду коммуникаций на серверах клиента. Запуск за 3–5 дней. Поддержка 24×7. Разработано Eyeline Communications." />
+    <link rel="icon" href="assets/logo.png" type="image/png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+    <div class="page-bg" aria-hidden="true"></div>
+
+    <header class="nav" id="top">
+        <a href="#top" class="nav-logo" aria-label="VeritiNET — на главную">
+            <img src="assets/logo.png" alt="veritinet" width="238" height="24" />
+        </a>
+        <nav class="nav-links" aria-label="Основная навигация">
+            <a href="#hero">Решение</a>
+            <a href="#opsec">OPSEC</a>
+            <a href="#platform">Платформа</a>
+            <a href="#support">Поддержка</a>
+            <a href="#contacts" class="nav-cta">Контакты</a>
+        </nav>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Открыть меню">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+
+    <div class="drawer" id="drawer" aria-hidden="true">
+        <div class="drawer__panel">
+            <a href="#hero">Решение</a>
+            <a href="#problem">Проблема</a>
+            <a href="#opsec">OPSEC</a>
+            <a href="#process">Процесс</a>
+            <a href="#platform">Платформа</a>
+            <a href="#support">Поддержка</a>
+            <a href="#training">Обучение</a>
+            <a href="#consulting">Консалтинг</a>
+            <a href="#audience">Аудитория</a>
+            <a href="#clients">Партнёры</a>
+            <a href="#contacts">Контакты</a>
+        </div>
+    </div>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero" id="hero">
+            <div class="hero__grid" aria-hidden="true"></div>
+            <div class="hero__orb hero__orb--1" aria-hidden="true"></div>
+            <div class="hero__orb hero__orb--2" aria-hidden="true"></div>
+            <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+            <div class="section-wrap hero__inner">
+                <div class="hero__eyeline">
+                    <div class="hero__eyeline-head">
+                        <i class="ti ti-building-skyscraper" aria-hidden="true"></i>
+                        <span>Команда разработчика</span>
+                    </div>
+                    <p class="hero__eyeline-text">VeritiNET создан командой <a href="https://eyeline.ru" target="_blank" rel="noopener noreferrer">Eyeline Communications</a> — новосибирского разработчика телекоммуникационных решений с&nbsp;многолетним опытом промышленных внедрений в&nbsp;корпоративном секторе.</p>
+                </div>
+                <div class="hero__content">
+                    <div class="hero__badge"><i class="ti ti-shield-lock"></i> Ваша собственная коммуникационная среда</div>
+                    <h1>Коммуникации.<br><span>Контекст.</span> Контроль.</h1>
+                    <p class="hero__lead">VeritiNET разворачивает для компании собственную среду коммуникаций на серверах клиента: сообщения, звонки, видеоконференции и файлы в едином доверенном контуре. Запуск — за 3–5 дней. Сопровождение — полностью на нас.</p>
+                    <ul class="hero__checklist">
+                        <li><i class="ti ti-check"></i>Единый коммуникационный контур</li>
+                        <li><i class="ti ti-check"></i>Запуск за 3–5 рабочих дней</li>
+                        <li><i class="ti ti-check"></i>Поддержка 24×7</li>
+                        <li><i class="ti ti-check"></i>Без собственной команды инженеров</li>
+                    </ul>
+                    <div class="hero__actions">
+                        <a href="#contacts" class="btn-primary">Получить консультацию</a>
+                    </div>
+                </div>
+
+                <div class="hero__visual" aria-hidden="true">
+                    <div class="visual-card visual-card--main">
+                        <div class="visual-header">
+                            <div class="visual-dot"></div>
+                            <span>Защищённый контур · активен</span>
+                        </div>
+                        <div class="visual-nodes">
+                            <div class="visual-node"><i class="ti ti-message-2"></i>Сообщения и файлы</div>
+                            <div class="visual-node"><i class="ti ti-phone"></i>Голосовая связь</div>
+                            <div class="visual-node"><i class="ti ti-video"></i>Видеоконференции</div>
+                            <div class="visual-node"><i class="ti ti-users-group"></i>Рабочие группы</div>
+                        </div>
+                    </div>
+                    <div class="visual-card visual-card--float a">
+                        <div class="visual-mini"><i class="ti ti-lock"></i> OPSEC-контроль</div>
+                    </div>
+                    <div class="visual-card visual-card--float b">
+                        <div class="visual-mini"><i class="ti ti-check"></i> SLA 4 часа</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROBLEM -->
+        <section class="screen" id="problem">
+            <div class="section-wrap reveal">
+                <span class="label">Проблема</span>
+                <h2>Большинство организаций работают в чужих коммуникациях</h2>
+                <p class="lead">Переписка — в одном сервисе. Документы — в другом. Видео — в третьем. Рабочие группы — в четвёртом.</p>
+                <p class="mt-sm">Пока всё работает, это незаметно. Проблемы появляются в тот момент, когда компания теряет контроль.</p>
+                <div class="risk-grid">
+                    <div class="card risk-card reveal reveal-delay-1"><i class="ti ti-shield-off"></i><p>Утечки информации и компрометация учётных записей.</p></div>
+                    <div class="card risk-card reveal reveal-delay-2"><i class="ti ti-cloud-off"></i><p>Потеря доступа к данным при сбое внешнего сервиса.</p></div>
+                    <div class="card risk-card reveal reveal-delay-3"><i class="ti ti-user-off"></i><p>Уход сотрудников вместе с критической информацией.</p></div>
+                    <div class="card risk-card reveal"><i class="ti ti-alert-triangle"></i><p>Мошеннические действия от имени сотрудников.</p></div>
+                </div>
+                <p class="note">Коммуникации становятся фактором риска.</p>
+            </div>
+        </section>
+
+        <!-- OPSEC -->
+        <section class="screen screen--alt" id="opsec">
+            <div class="section-wrap reveal">
+                <span class="label">Методология</span>
+                <h2>Что такое OPSEC</h2>
+                <p class="lead">Operational Security — дисциплина управления операционными рисками через контроль информации, коммуникаций и доступа. Методология пришла из структур, для которых цена ошибки была слишком высока. Сегодня те же принципы применяются в бизнесе — не для атмосферы подозрительности, а для сохранения управляемости.</p>
+                <p class="opsec-intro">OPSEC помогает ответить на четыре вопроса:</p>
+                <div class="opsec-grid">
+                    <div class="card opsec-q reveal reveal-delay-1"><i class="ti ti-database"></i>Что для компании действительно важно?</div>
+                    <div class="card opsec-q reveal reveal-delay-2"><i class="ti ti-users"></i>Кто имеет доступ к этим данным?</div>
+                    <div class="card opsec-q reveal reveal-delay-3"><i class="ti ti-eye"></i>Какие угрозы существуют?</div>
+                    <div class="card opsec-q reveal"><i class="ti ti-lock"></i>Какие меры защиты необходимы?</div>
+                </div>
+                <p class="note">Результат: снижение репутационных, финансовых, информационных и операционных рисков.</p>
+            </div>
+        </section>
+
+        <!-- PROCESS -->
+        <section class="screen" id="process">
+            <div class="section-wrap reveal">
+                <span class="label">Процесс</span>
+                <h2>Как работает VeritiNET</h2>
+                <div class="flow">
+                    <div class="flow-step reveal"><div class="flow-line"><div class="flow-dot"></div><div class="flow-connector"></div></div><div class="flow-text"><strong>OPSEC-анализ</strong><p>Определяем требования и чувствительные зоны бизнеса</p></div></div>
+                    <div class="flow-step reveal reveal-delay-1"><div class="flow-line"><div class="flow-dot"></div><div class="flow-connector"></div></div><div class="flow-text"><strong>Модель угроз</strong><p>Выявляем реальные сценарии риска для вашей компании</p></div></div>
+                    <div class="flow-step reveal reveal-delay-2"><div class="flow-line"><div class="flow-dot"></div><div class="flow-connector"></div></div><div class="flow-text"><strong>Проектирование контура</strong><p>Проектируем коммуникационную среду под выявленные требования</p></div></div>
+                    <div class="flow-step reveal reveal-delay-3"><div class="flow-line"><div class="flow-dot"></div><div class="flow-connector"></div></div><div class="flow-text"><strong>Развёртывание за 3–5 дней</strong><p>Запускаем платформу, подключаем пользователей, проводим онбординг</p></div></div>
+                    <div class="flow-step reveal"><div class="flow-line"><div class="flow-dot"></div><div class="flow-connector"></div></div><div class="flow-text"><strong>Непрерывная поддержка</strong><p>Обеспечиваем работу среды — вы обращаетесь к людям, не к боту</p></div></div>
+                    <div class="flow-step reveal reveal-delay-1"><div class="flow-line"><div class="flow-dot"></div><div class="flow-connector"></div></div><div class="flow-text"><strong>Обучение сотрудников</strong><p>Повышаем устойчивость команды к социальной инженерии</p></div></div>
+                    <div class="flow-step reveal reveal-delay-2"><div class="flow-line"><div class="flow-dot"></div></div><div class="flow-text"><strong>Консалтинг и развитие</strong><p>Развиваем систему вместе с ростом компании</p></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PLATFORM -->
+        <section class="screen screen--alt" id="platform">
+            <div class="section-wrap reveal">
+                <span class="label">Платформа</span>
+                <h2>Всё необходимое в одном контуре</h2>
+                <div class="scenario">
+                    <p>Переговоры по сделке. Обсуждение условий, обмен документами, видеоконференция — всё внутри одного контура. Ни одного внешнего сервиса.</p>
+                </div>
+                <div class="platform-grid">
+                    <div class="card platform-card reveal reveal-delay-1"><i class="ti ti-message-2"></i><h3>Сообщения</h3><p>Личные и групповые чаты, рабочие каналы, передача файлов</p></div>
+                    <div class="card platform-card reveal reveal-delay-2"><i class="ti ti-phone"></i><h3>Звонки</h3><p>Индивидуальные и групповые вызовы, корпоративная связь</p></div>
+                    <div class="card platform-card reveal reveal-delay-3"><i class="ti ti-video"></i><h3>Видеоконференции</h3><p>Совещания, переговоры, демонстрация экрана</p></div>
+                    <div class="card platform-card reveal"><i class="ti ti-folder"></i><h3>Файлы</h3><p>Единое пространство документов с контролем доступа</p></div>
+                    <div class="card platform-card reveal reveal-delay-1"><i class="ti ti-users-group"></i><h3>Рабочие группы</h3><p>Проекты, подразделения, временные команды</p></div>
+                </div>
+                <div class="config-block reveal">
+                    <p><strong>Возможные конфигурации:</strong> мессенджер + ВКС; + файлы; + обучение; + пентестинг; + консалтинг. Любая комбинация — по запросу.</p>
+                </div>
+                <div class="divider"></div>
+                <p>Мы не продаём ПО и лицензии. Мы создаём готовую рабочую среду и отвечаем за её работу.</p>
+            </div>
+        </section>
+
+        <!-- SUPPORT -->
+        <section class="screen" id="support">
+            <div class="section-wrap reveal">
+                <span class="label">Поддержка</span>
+                <h2>Поддержка 24×7</h2>
+                <p class="lead">Когда возникает проблема, вы обращаетесь к людям, которые отвечают за работу вашей среды. Не к форуму. Не к чат-боту.</p>
+                <div class="pricing-grid">
+                    <div class="card price-card reveal reveal-delay-1">
+                        <div class="price-tier">Bronze</div>
+                        <div class="price-amount">100 000 ₽</div>
+                        <div class="price-period">в месяц</div>
+                        <div class="price-features">
+                            <div class="price-feature"><i class="ti ti-check"></i>Поддержка в рабочее время</div>
+                            <div class="price-feature"><i class="ti ti-check"></i>Система заявок</div>
+                            <div class="price-feature"><i class="ti ti-check"></i>SLA — следующий рабочий день</div>
+                        </div>
+                    </div>
+                    <div class="card price-card featured reveal reveal-delay-2">
+                        <div class="price-badge">Популярный</div>
+                        <div class="price-tier">Silver</div>
+                        <div class="price-amount">150 000 ₽</div>
+                        <div class="price-period">в месяц</div>
+                        <div class="price-features">
+                            <div class="price-feature"><i class="ti ti-check"></i>Поддержка 24×7</div>
+                            <div class="price-feature"><i class="ti ti-check"></i>Система заявок</div>
+                            <div class="price-feature"><i class="ti ti-check"></i>SLA — 4 часа</div>
+                        </div>
+                    </div>
+                    <div class="card price-card reveal reveal-delay-3">
+                        <div class="price-tier">Gold</div>
+                        <div class="price-amount">300 000 ₽</div>
+                        <div class="price-period">в месяц</div>
+                        <div class="price-features">
+                            <div class="price-feature"><i class="ti ti-check"></i>Поддержка 24×7</div>
+                            <div class="price-feature"><i class="ti ti-check"></i>Телефонная линия</div>
+                            <div class="price-feature"><i class="ti ti-check"></i>Приоритетное обслуживание</div>
+                            <div class="price-feature"><i class="ti ti-check"></i>Временное решение — 1 час</div>
+                            <div class="price-feature"><i class="ti ti-check"></i>Окончательное решение — 1 сутки</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TRAINING -->
+        <section class="screen screen--alt" id="training">
+            <div class="section-wrap reveal">
+                <span class="label">Обучение</span>
+                <h2>Обучение сотрудников</h2>
+                <p class="lead">Самая надёжная система не защитит от человеческих ошибок. Поэтому мы предлагаем отдельную программу — противофишинговый корпоративный тренинг.</p>
+                <div class="training-card">
+                    <h3>Программа охватывает</h3>
+                    <div class="topic-grid">
+                        <div class="topic-item"><i class="ti ti-mail-opened"></i>Фишинговые письма</div>
+                        <div class="topic-item"><i class="ti ti-link"></i>Поддельные ссылки</div>
+                        <div class="topic-item"><i class="ti ti-user-exclamation"></i>Компрометация учётных записей</div>
+                        <div class="topic-item"><i class="ti ti-phone-incoming"></i>Мошеннические звонки</div>
+                        <div class="topic-item"><i class="ti ti-file-alert"></i>Работа с вложениями</div>
+                        <div class="topic-item"><i class="ti ti-shield-check"></i>Правила безопасной коммуникации</div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="format-row">
+                        <div class="format-tag"><i class="ti ti-users"></i>До 20 сотрудников</div>
+                        <div class="format-tag"><i class="ti ti-device-laptop"></i>Онлайн или очно</div>
+                        <div class="format-tag"><i class="ti ti-currency-rubel"></i>От 300 000 ₽</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONSULTING -->
+        <section class="screen" id="consulting">
+            <div class="section-wrap reveal">
+                <span class="label">Консалтинг</span>
+                <h2>Коммуникации как инфраструктура</h2>
+                <p class="lead">Для компаний, которые рассматривают коммуникации как часть корпоративной инфраструктуры, а не как набор сервисов.</p>
+                <div class="consulting-grid">
+                    <div class="consulting-item reveal reveal-delay-1"><h3>Модели угроз</h3><p>Выявляем актуальные риски для вашей отрасли и структуры</p></div>
+                    <div class="consulting-item reveal reveal-delay-2"><h3>Регламенты</h3><p>Разрабатываем коммуникационные политики и правила доступа</p></div>
+                    <div class="consulting-item reveal reveal-delay-3"><h3>Архитектура</h3><p>Проектируем коммуникационную среду под долгосрочные задачи</p></div>
+                    <div class="consulting-item reveal"><h3>Управление рисками</h3><p>Снижаем операционную зависимость от внешних платформ</p></div>
+                    <div class="consulting-item reveal reveal-delay-1"><h3>Масштабирование</h3><p>Готовим систему к росту компании и изменению структуры</p></div>
+                </div>
+                <p class="note consulting-price">Стоимость — по запросу.</p>
+            </div>
+        </section>
+
+        <!-- AUDIENCE -->
+        <section class="screen screen--alt" id="audience">
+            <div class="section-wrap reveal">
+                <span class="label">Аудитория</span>
+                <h2>Кому подходит VeritiNET</h2>
+                <div class="fit-grid">
+                    <div class="fit-section">
+                        <h3>Подходит</h3>
+                        <div class="check-list">
+                            <div class="check-item"><i class="ti ti-circle-check"></i>Средний бизнес</div>
+                            <div class="check-item"><i class="ti ti-circle-check"></i>Производственные компании</div>
+                            <div class="check-item"><i class="ti ti-circle-check"></i>Консалтинговые фирмы</div>
+                            <div class="check-item"><i class="ti ti-circle-check"></i>Финансовые организации</div>
+                            <div class="check-item"><i class="ti ti-circle-check"></i>Семейные офисы</div>
+                            <div class="check-item"><i class="ti ti-circle-check"></i>Международные команды</div>
+                            <div class="check-item"><i class="ti ti-circle-check"></i>Распределённые компании</div>
+                        </div>
+                    </div>
+                    <div class="fit-section">
+                        <h3>Не подходит</h3>
+                        <div class="check-list">
+                            <div class="cross-item"><i class="ti ti-circle-x"></i>Компании с развитой службой ИБ и/или ИТ</div>
+                            <div class="cross-item"><i class="ti ti-circle-x"></i>Собственная коммуникационная инфраструктура для безопасных коммуникаций</div>
+                            <div class="cross-item"><i class="ti ti-circle-x"></i>Достаточно Telegram, Zoom или аналогов</div>
+                            <div class="cross-item"><i class="ti ti-circle-x"></i>Организации, не работающие с чувствительной информацией</div>
+                            <div class="cross-item"><i class="ti ti-circle-x"></i>Организации, не подписывающие NDA со своими контрагентами</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CLIENTS -->
+        <section class="screen" id="clients">
+            <div class="section-wrap reveal">
+                <span class="label">Партнёры</span>
+                <h2>Клиенты и партнёры</h2>
+                <div class="clients-grid">
+                    <a href="https://alfabank.ru" class="client-logo reveal reveal-delay-1" target="_blank" rel="noopener noreferrer" aria-label="Альфа-Банк">
+                        <img src="assets/partners/alfa-bank.png" alt="Альфа-Банк" width="160" height="80" loading="lazy" />
+                    </a>
+                    <a href="https://beeline.ru" class="client-logo reveal reveal-delay-1" target="_blank" rel="noopener noreferrer" aria-label="Билайн">
+                        <img src="assets/partners/beeline.png" alt="Билайн" width="160" height="80" loading="lazy" />
+                    </a>
+                    <a href="https://www.mos.ru" class="client-logo reveal reveal-delay-2" target="_blank" rel="noopener noreferrer" aria-label="Правительство Москвы">
+                        <img src="assets/partners/moscow.png" alt="Правительство Москвы" width="160" height="80" loading="lazy" />
+                    </a>
+                    <a href="https://mts.ru" class="client-logo reveal reveal-delay-2" target="_blank" rel="noopener noreferrer" aria-label="МТС">
+                        <img src="assets/partners/mts.png" alt="МТС" width="160" height="80" loading="lazy" />
+                    </a>
+                    <a href="https://atos.net" class="client-logo reveal reveal-delay-3" target="_blank" rel="noopener noreferrer" aria-label="Atos">
+                        <img src="assets/partners/atos.png" alt="Atos" width="160" height="80" loading="lazy" />
+                    </a>
+                    <a href="https://megafon.ru" class="client-logo reveal" target="_blank" rel="noopener noreferrer" aria-label="МегаФон">
+                        <img src="assets/partners/megafon.png" alt="МегаФон" width="160" height="80" loading="lazy" />
+                    </a>
+                    <a href="https://www.gazprombank.ru" class="client-logo reveal reveal-delay-1" target="_blank" rel="noopener noreferrer" aria-label="Газпромбанк">
+                        <img src="assets/partners/gazprombank.png" alt="Газпромбанк" width="160" height="80" loading="lazy" />
+                    </a>
+                    <a href="https://nlstar.com" class="client-logo reveal reveal-delay-2" target="_blank" rel="noopener noreferrer" aria-label="NL International">
+                        <img src="assets/partners/nl-international.png" alt="NL International" width="160" height="80" loading="lazy" />
+                    </a>
+                    <a href="https://www.yellowpages.com.ph" class="client-logo reveal reveal-delay-3" target="_blank" rel="noopener noreferrer" aria-label="Yellow Pages">
+                        <img src="assets/partners/yellow-pages.png" alt="Yellow Pages" width="160" height="80" loading="lazy" />
+                    </a>
+                    <a href="https://tele2.ru" class="client-logo reveal" target="_blank" rel="noopener noreferrer" aria-label="Tele2">
+                        <img src="assets/partners/tele2.png" alt="Tele2" width="160" height="80" loading="lazy" />
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTS -->
+        <section class="screen final" id="contacts">
+            <div class="section-wrap">
+                <div class="cta-box reveal">
+                    <span class="label">Контакты</span>
+                    <h2>Создаём доверенный коммуникационный контур под задачи вашего бизнеса</h2>
+                    <p class="lead">Запуск за 3–5 дней. Поддержка 24×7. Единая коммуникационная среда. Без лишней инженерии.</p>
+                    <p class="prepayment-note">Предоплата — 50% от стоимости проекта.</p>
+
+                    <form id="contact-form" class="contact-form" novalidate>
+                        <div class="form-honeypot" aria-hidden="true">
+                            <label for="form-website">Не заполняйте это поле</label>
+                            <input type="text" id="form-website" name="website" tabindex="-1" autocomplete="off" />
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="form-name">Имя *</label>
+                                <div class="input-wrap">
+                                    <i class="ti ti-user input-icon"></i>
+                                    <input type="text" id="form-name" name="name" placeholder="Иван Петров" required autocomplete="name" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-company">Компания *</label>
+                                <div class="input-wrap">
+                                    <i class="ti ti-building input-icon"></i>
+                                    <input type="text" id="form-company" name="company" placeholder="ООО «ТехноСервис»" required autocomplete="organization" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="form-email">E-mail *</label>
+                                <div class="input-wrap">
+                                    <i class="ti ti-mail input-icon"></i>
+                                    <input type="email" id="form-email" name="email" placeholder="ivan@tehno.ru" required autocomplete="email" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-phone">Телефон</label>
+                                <div class="input-wrap">
+                                    <i class="ti ti-phone input-icon"></i>
+                                    <input type="tel" id="form-phone" name="phone" placeholder="+7 999 123-45-67" autocomplete="tel" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="form-message">Сообщение</label>
+                            <div class="input-wrap">
+                                <i class="ti ti-message input-icon input-icon--top"></i>
+                                <textarea id="form-message" name="message" rows="3" placeholder="Опишите вашу задачу..."></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group full-width checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="form-consent" name="consent" required />
+                                <span>Я даю <a href="privacy-policy.html">согласие на обработку персональных данных</a></span>
+                            </label>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn-primary" id="form-submit">
+                                <span class="btn-text">Отправить заявку</span>
+                                <span class="btn-loader" aria-hidden="true"></span>
+                            </button>
+                            <div class="form-status" id="form-status"></div>
+                        </div>
+                    </form>
+
+                    <div class="footer-logo">
+                        <img src="assets/logo.png" alt="veritinet" width="178" height="18" />
+                        <span class="footer-tagline">Коммуникации. Контекст. Контроль.</span>
+                    </div>
+                    <p class="footer-eyeline">Разработано компанией <a href="https://eyeline.ru" target="_blank" rel="noopener noreferrer">Eyeline Communications</a></p>
+                    <p class="footer-copy">© 2026 ООО АйЛайн Коммьюникейшнс СНГ. Все права защищены.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
