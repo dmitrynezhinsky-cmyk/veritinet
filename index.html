@@ -54,14 +54,8 @@
             <canvas id="hero-canvas" aria-hidden="true"></canvas>
 
             <div class="section-wrap hero__inner">
-                <div class="hero__eyeline">
-                    <div class="hero__eyeline-head">
-                        <i class="ti ti-building-skyscraper" aria-hidden="true"></i>
-                        <span>Команда разработчика</span>
-                    </div>
-                    <p class="hero__eyeline-text">VeritiNET создан командой <a href="https://eyeline.ru" target="_blank" rel="noopener noreferrer">Eyeline Communications</a> — новосибирского разработчика телекоммуникационных решений с&nbsp;многолетним опытом промышленных внедрений в&nbsp;корпоративном секторе.</p>
-                </div>
                 <div class="hero__content">
+                    <p class="hero__eyeline">VeritiNET создан командой <strong>Eyeline Communications</strong> — новосибирского разработчика телекоммуникационных решений с многолетним опытом промышленных внедрений в корпоративном секторе.</p>
                     <div class="hero__badge"><i class="ti ti-shield-lock"></i> Ваша собственная коммуникационная среда</div>
                     <h1>Коммуникации.<br><span>Контекст.</span> Контроль.</h1>
                     <p class="hero__lead">VeritiNET разворачивает для компании собственную среду коммуникаций на серверах клиента: сообщения, звонки, видеоконференции и файлы в едином доверенном контуре. Запуск — за 3–5 дней. Сопровождение — полностью на нас.</p>
@@ -341,11 +335,8 @@
                     <p class="lead">Запуск за 3–5 дней. Поддержка 24×7. Единая коммуникационная среда. Без лишней инженерии.</p>
                     <p class="prepayment-note">Предоплата — 50% от стоимости проекта.</p>
 
+                    <!-- ===== ФОРМА ===== -->
                     <form id="contact-form" class="contact-form" novalidate>
-                        <div class="form-honeypot" aria-hidden="true">
-                            <label for="form-website">Не заполняйте это поле</label>
-                            <input type="text" id="form-website" name="website" tabindex="-1" autocomplete="off" />
-                        </div>
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="form-name">Имя *</label>
@@ -381,24 +372,31 @@
                         <div class="form-group full-width">
                             <label for="form-message">Сообщение</label>
                             <div class="input-wrap">
-                                <i class="ti ti-message input-icon input-icon--top"></i>
+                                <i class="ti ti-message input-icon" style="top:18px; transform:none;"></i>
                                 <textarea id="form-message" name="message" rows="3" placeholder="Опишите вашу задачу..."></textarea>
                             </div>
                         </div>
                         <div class="form-group full-width checkbox-group">
                             <label class="checkbox-label">
                                 <input type="checkbox" id="form-consent" name="consent" required />
-                                <span>Я даю <a href="privacy-policy.html">согласие на обработку персональных данных</a></span>
+                                <span>Я даю <a href="privacy-policy.html" target="_blank">согласие на обработку персональных данных</a></span>
                             </label>
                         </div>
                         <div class="form-actions">
                             <button type="submit" class="btn-primary" id="form-submit">
                                 <span class="btn-text">Отправить заявку</span>
-                                <span class="btn-loader" aria-hidden="true"></span>
+                                <span class="btn-loader" style="display:none;"></span>
                             </button>
                             <div class="form-status" id="form-status"></div>
                         </div>
                     </form>
+                    <!-- ===== КОНЕЦ ФОРМЫ ===== -->
+
+                    <div class="contacts">
+                        <a href="tel:+78000000000" class="contact-item"><i class="ti ti-phone"></i>Телефон</a>
+                        <a href="mailto:hello@veritinet.ru" class="contact-item"><i class="ti ti-mail"></i>E-mail</a>
+                        <a href="https://t.me/veritinet" class="contact-item" target="_blank" rel="noopener noreferrer"><i class="ti ti-brand-telegram"></i>Telegram</a>
+                    </div>
 
                     <div class="footer-logo">
                         <img src="assets/logo.png" alt="veritinet" width="178" height="18" />
