@@ -617,26 +617,45 @@ main {
         grid-template-columns: 1fr;
     }
 
-    .hero__visual {
-        order: -1;
-        max-width: 400px;
-        margin: 0 auto;
-        padding-bottom: 2rem;
-    }
-
-    .visual-card--float.a {
-        top: -8px;
-        right: 4px;
-    }
-
-    .visual-card--float.b {
-        bottom: -6px;
-        right: 4px;
-    }
-
     .hero {
         min-height: auto;
         padding-top: 2rem;
+        overflow: visible;
+    }
+
+    .hero__visual {
+        order: -1;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.65rem;
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 0 0 0.5rem;
+    }
+
+    .visual-card--main {
+        grid-column: 1 / -1;
+    }
+
+    .visual-card--float {
+        position: static;
+        animation: none;
+        padding: 0.7rem 0.85rem;
+    }
+
+    .visual-card--float.a,
+    .visual-card--float.b {
+        top: auto;
+        right: auto;
+        bottom: auto;
+        left: auto;
+    }
+
+    .visual-mini {
+        justify-content: center;
+        white-space: nowrap;
+        font-size: 11px;
     }
 }
 
